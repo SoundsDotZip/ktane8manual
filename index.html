@@ -18,64 +18,90 @@
             color: #c2c3c7;
             text-transform: uppercase;
             margin: 0px;
+            overflow-x: hidden;
         }
-        .pinkbar
+        #frame
         {
-            background-color: pink;
-            width: 100%;
-            padding: 20px;
+            margin-left: 200px;
+        }
+        #pinkbar
+        {
+            background-color: #ff004d;
+            height: 100%;
+            padding: 16px;
+            text-align: left;
+            position: fixed;
+            top: 0px;
+            /*transform: rotate(90deg);
+            transform-origin: 30px;*/
+        }
+        .pinkbarlink
+        {
+            color: #7e2553;
+            text-decoration: none;
+        }
+        #overview
+        {
+            margin-top: 60px;
+        }
+        li
+        {
+            list-style: square;
+        }
+        #div_wires p
+        {
+            text-indent: 24px;
         }
     </style>
 </head>
 <body>
-    <div class="pinkbar">
-        <a href="" class="pinkbarlink">overview</a>
+    <div id="pinkbar">
+        <a href="#overview" class="pinkbarlink">overview</a> <br> <br>
+        <a href="#wires" class="pinkbarlink">wires</a> <br> <br>
     </div>
-    <h1>ktane-8 manual</h1>
-    <p>yep, this is the one</p>
-    <p>z</p>
-    <p>z</p>
-    <p>z</p>
-    <p>z</p>
-    <p>z</p>
-    <p>z</p>
-    <p>z</p>
-    <p>z</p>
-    <p>z</p>
-    <p>z</p>
-    <p>z</p>
-    <p>z</p>
-    <p>z</p>
-    <p>z</p>
-    <p>z</p>
-    <p>z</p>
-    <p>z</p>
-    <p>z</p>
-    <p>z</p>
-    <p>z</p>
-    <p>z</p>
-    <p>z</p>
-    <p>z</p>
-    <p>z</p>
-    <p>z</p>
-    <p>z</p>
-    <p>z</p>
-    <p>z</p>
-    <p>z</p>
-    <p>z</p>
-    <p>z</p>
-    <p>z</p>
-    <p>z</p>
-    <p>z</p>
-    <p>z</p>
-    <p>z</p>
-    <p>z</p>
-    <p>z</p>
-    <p>z</p>
-    <p>z</p>
-    <p>z</p>
-    <p>z</p>
-    <p>z</p>
-    <p>z</p>
+    <div id="frame">
+        <br id="overview">
+        <h1>ktane-8 bomb defusal manual</h1>
+        <p style="color: #83769c;">a keep talking and nobody explodes pico-8 remake</p>
+        <p>version 1 / verification code 241</p> <br>
+        <p>difusing bombs require the same procedures as in the original game</p>
+        <p>only a few things are different in this version</p>
+
+        <br id="wires"> <br>
+        <h2>Wires</h2>
+        <div id="div_wires">
+            <br> <li>3 wires</li> <br>
+            <p>1. no <span style="color: #ff004d;">red</span>: 2nd wire</p>
+            <p>2. 1 or more <span style="color: #29adff;">blue</span>: 2nd <span style="color: #29adff;">blue</span> wire</p>
+            <p>3. otherwise: last wire</p>
+
+            <br> <li>4 wires</li> <br>
+            <p>1. 1 or more <span style="color: #ff004d;">red</span> and <span style="color: #ffccaa;">serial</span> last digit odd: last <span style="color: #ff004d;">red</span> wire</p>
+            <p>2. no <span style="color: #ff004d;">red</span> and last wire is <span style="color: #ffec27;">yellow</span>: 1st wire</p>
+            <p>3. 1 <span style="color: #29adff;">blue</span>: 1st wire</p>
+            <p>4. 2 or more <span style="color: #ffec27;">yellow</span>: last wire</p>
+            <p>5. otherwise: 2nd wire</p>
+
+            <br> <li>5 wires</li> <br>
+            <p>1. last wire is <span style="color: #000000;">black</span> and <span style="color: #ffccaa;">serial</span> last digit odd: 4th wire</p>
+            <p>2. 1 <span style="color: #ff004d;">red</span> and 1 or more <span style="color: #ffec27;">yellow</span>: 1st wire</p>
+            <p>3. no <span style="color: #000000;">black</span>: 2nd wire</p>
+            <p>4. otherwise: 1st wire</p>
+
+            <br> <li>6 wires</li> <br>
+            <p>1. no <span style="color: #ffec27;">yellow</span> and <span style="color: #ffccaa;">serial</span> last digit odd: 3rd wire</p>
+            <p>2. 1 <span style="color: #ffec27;">yellow</span> and 1 or more <span style="color: #fff1e8;">white</span>: 4th wire</p>
+            <p>3. no <span style="color: #ff004d;">red</span>: last wire</p>
+            <p>4. otherwise: 4th wire</p>
+        </div>
+        <p>z</p>
+        <p>z</p>
+        <p>z</p>
+        <p>z</p>
+        <p>z</p>
+        <p>z</p>
+        <p>z</p>
+        <p>z</p>
+    </div>
 </body>
 </html>
